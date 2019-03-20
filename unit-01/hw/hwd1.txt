@@ -1,0 +1,99 @@
+![star wars theme image](https://i.ytimg.com/vi/SBW95uQM45U/hqdefault.jpg)
+
+# Star Wars, the Command Line, and The Battle for the Fate of the Universe
+
+Working in the command line is a key skill to develop as a programmer. It's a big break from what you're used to, and practice makes (eventually) perfect. Let's explore the Star Wars narrative using the command line!
+
+Please record your commands underneath each bullet point in this markdown.
+
+As you work, make sure you git add . and git commit -m "[YOUR MESSAGE HERE]"!
+
+## "A New Hope"
+### Act I
+
+* In your homework directory, create a new directory called `star_wars`.
+
+> Example answer: `mkdir star_wars`
+
+* In the `star_wars` folder, create two new directories: `empire` and `rebellion`.
+> mkdir empire rebellion
+
+* Inside the `empire` directory, create a .txt file called `darth_vader`.
+> touch empire/darth_vader.txt
+
+* Use the force (or your knowledge of the command line) to add the text "...heavy breathing..." to the `darth_vader` file. (Don't remember how to do this? Use the `other force`, known as Google!)
+> echo "...heavy breathing..." >> empire/darth_vader.txt
+
+* Inside the `empire` directory, create a .txt file called `emperor_palpatine`.
+> touch empire/emperor_palpatine.txt
+
+* Inside the `empire` directory, create a directory called `death_star`.
+> mkdir empire/death_star
+
+* Move `darth_vader` into the `death_star`.
+> mv empire/darth_vader.txt empire/death_star/
+
+### Act II
+
+* Move into the `rebellion` directory.
+> cd rebellion/
+
+* Create a file called `princess_leia` and add the text "Help me, Obi-Wan...You're my only hope."
+> touch princess_leia.txt
+> echo "Help me, Obi-Wan...You're my only hope." >> princess_leia.txt
+
+* Create a file called `obi_wan`.
+> touch obi_wan
+
+* Create a file called `luke_skywalker`.
+> touch luke_skywalker
+
+* Create a directory called `millenium_falcon`.
+> mkdir millenium_falcon
+
+* Inside the `millenium_falcon`, create two files: `han_solo` and `chewy`.
+> touch millenium_falcon/han_solo millenium_falcon/chewy
+
+* Move `luke_skywalker`, `obi_wan`, and `princess_leia` into the `millenium_falcon`.
+> mv luke_skywalker obi_wan princess_leia.txt millenium_falcon/
+
+* Move the `millenium_falcon` into the `death_star`.
+> mv -f millenium_falcon/ ../empire/death_star/
+
+### Act III
+
+* Unload the Millenium Falcon! Move the whole crew from the `millenium_falcon` directory into the `death_star` directory.
+> mv empire/death_star/millenium_falcon/* empire/death_star/
+
+* `darth_vader` has defeated `obi_wan`! Delete poor `obi_wan`.
+> rm empire/death_star/obi_wan
+
+* Our heroes have disabled the tractor beam! Move the whole crew back into the `millenium_falcon`! Remember: `darth_vader` remains in the `death_star` and `emperor_palpatine` is still in the `empire`.
+> cd empire/death_star/
+> mv chewy princess_leia.txt han_solo luke_skywalker millenium_falcon/
+
+* Move the `millenium_falcon` back into the `rebellion` directory.
+> mv millenium_falcon/ ../../rebellion/
+
+* `darth_vader` leaves the `death_star` to pursue Luke! Move him from the `death_star` into the `empire` directory!
+> mv darth_vader.txt ../
+
+* Thanks to his practice back home at Beggar's Canyon, Luke blew up the `death_star`! Remove it from the galaxy!
+> cd ..
+> rm -r death_star/
+
+ :boom:
+
+### Act IV
+
+## Submit Your Homework
+
+1. Copy and paste the [raw text](https://raw.git.generalassemb.ly/sei-nyc-jeopardy/command-line-homework/master/README.md?token=AAA9PqHhTCz_1MWftdC-eoBcn7QsUmTAks5cDt1EwA%3D%3D) of this `README` file into your editor.
+
+2. Follow the instructions and paste your commands into the `README` text you copied (`paste your command here`).
+
+3. Click on the `Issues` tab, create a new issue ticket with `your name` as the `title`, and paste the `README` filled with your answers in the body of the issue ticket. **SUBMIT YOUR ISSUE TICKET TO THIS REPO TONIGHT AT 11 PM**
+
+![Issue Ticket](https://media.git.generalassemb.ly/user/14920/files/9928fb80-4997-11e9-8a23-f6890885f8d3)
+
+
