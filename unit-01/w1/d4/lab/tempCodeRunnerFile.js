@@ -1,0 +1,1 @@
+${array[array.length-1]}
