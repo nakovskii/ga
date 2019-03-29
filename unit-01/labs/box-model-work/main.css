@@ -1,0 +1,44 @@
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+}
+#square1 {
+    background-color: red;
+    height: 100px;
+    width: 200px;
+}
+#square2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#square3 {
+    display: inline-block;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+#square4 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+p {
+    display: inline;
+}
+* {
+    border: 1px solid cornflowerblue !important;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
