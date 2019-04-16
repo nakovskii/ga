@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wanderlust Photography</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:900,300">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/scaffolding.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body class="prints">
+    <header>
+      <nav>
+        <a href="#" id="mobile" class="fa fa-bars"></a>
+        <a href="about.html">About Us</a>
+        <a href="prints.html" class="current">Order Prints</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <h1><a href="index.html">Wanderlust<br>Photography</a></h1>
+    </header>
+    <section class="orderform">
+      <form class="pure-form pure-form-stacked" action="order.php" method="post">
+        <fieldset>
+          <legend>Order Prints</legend>
+          <label for="customer">Name</label>
+          <input name="customer" type="text" placeholder="Name" class="pure-input-1">
+          <label for="address1">Address Line 1</label>
+          <input name="address1" type="text" placeholder="Address Line 1" class="pure-input-1">
+          <label for="address2">Address Line 2</label>
+          <input name="address2" type="text" placeholder="Address Line 1" class="pure-input-1">
+          <label for="photo">Photo</label>
+          <select name="photo" class="pure-input-1">
+            <option value="wanderlust1">Wanderlust 1</option>
+            <option value="wanderlust2">Wanderlust 2</option>
+            <option value="wanderlust3">Wanderlust 3</option>
+            <option value="wanderlust4">Wanderlust 4</option>
+            <option value="wanderlust5">Wanderlust 5</option>
+            <option value="wanderlust6">Wanderlust 6</option>
+            <option value="wanderlust7">Wanderlust 7</option>
+            <option value="wanderlust8">Wanderlust 8</option>
+            <option value="wanderlust9">Wanderlust 9</option>
+            <option value="wanderlust10">Wanderlust 10</option>
+            <option value="wanderlust11">Wanderlust 11</option>
+            <option value="wanderlust12">Wanderlust 12</option>
+          </select>
+          <label for="size">Size</label>
+          <input type="radio" name="size" value="46" checked> 4x6
+          <input type="radio" name="size" value="57"> 5x7
+          <input type="radio" name="size" value="810"> 8x10
+          <label for="email">Email</label>
+          <input name="email" type="email" placeholder="Email" class="pure-input-1">
+          <label for="comments">Comments / Concerns</label>
+          <textarea name="comments" placeholder="Any special requests?" class="pure-input-1"></textarea>
+          <label for="terms">
+            <input name="terms" type="checkbox"> I've read the terms and conditions
+          </label>
+          <button type="submit" class="pure-button pure-input-1">Place Order <i class="fa fa-share"></i></button>
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; Wanderlust Photography 2015</p>
+      <p id="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-dribbble"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+      </p>
+    </footer>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/project.min.js" type="text/javascript"></script>
+  </body>
+</html>

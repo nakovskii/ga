@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+  background-color: #333;
+  font-family: Helvetica;
+}
+
+#container{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 700px;
+  height: 400px;
+  border: 5px solid #888;
+  background: #ccc;
+  margin: 0px 0 0 -350px;
+  text-align: center;
+}
+
+#photo{
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 5px solid #888;
+  border-radius: 50%;
+  left: 50%;
+  top: 5%;
+  margin: 0 0 0 -75px;
+  background-image: url(https://pixel.nymag.com/imgs/daily/vulture/2018/09/11/11-alex-trebek-beard.w330.h330.jpg);
+  background-size: contain;
+}
+
+#content{
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  top: 200px;
+  text-align: center;
+}
+#smalltext{
+  display: block;
+}
+#bigtext{
+  display: block;
+  font-size: 32pt;  
+  font-weight: bold;
+}
+
+.attribute{
+  display: inline-block;
+  font-size: 32pt;
+  margin: 0 25px 0 25px;
+  margin-top: 330px;
+}
+
+body{text-align: center;}
+
+button{margin-top: 15px;}</style>
+</head>
+<body>
+    <div id="container">
+        <div id="photo"></div>
+      
+        <div id="content">
+          <span id="smalltext">My name is</span>
+          <span id="bigtext">Alex Trebek</span>
+        </div>
+      
+        <div class="attribute" id="name">😀</div>
+        <div class="attribute" id="email">📧</div>
+        <div class="attribute" id="birthdate">🎉</div>
+        <div class="attribute" id="address">📪</div>
+        <div class="attribute" id="phone">📞</div>
+        <div class="attribute" id="password">🔒</div>
+      
+      </div>
+        <button>MOAR!</button>
+        <script src="./rest-api.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-console.log(result) // { name: 'cherries', quantity: 5 }
+${array[array.length-1]}

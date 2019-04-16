@@ -1,0 +1,196 @@
+    /* Add Styles Here */
+    @media (min-width : 600px) {
+        body * {
+            margin: 0 auto;
+        }
+        body {
+            font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color:#111111;
+        }
+        section {
+            width: 85%;
+        }
+        #services {
+            display: grid;
+            grid-template-rows: 120px 220px 220px 220px;
+            grid-template-columns: 50% 50%;
+        }
+        #services h1 {
+            top: 0;
+            left: 0;
+            grid-column: 1/3;
+            grid-row: 1/2;
+            margin: 40px 0;
+            font-size: 40px;
+            font-weight: 900;
+            text-align: left;
+        }
+    
+        .service-box {
+            margin: auto;
+            padding: 10px;
+            height: 200px;
+            background-color: #f4f4f4;
+            border: 1px solid white;
+            display: block;
+        }
+        .service-box h2 {
+            margin: 25px;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .service-box p {
+            font-weight: 300;
+        }
+        #biography-h1 {
+            top: 0;
+            left: 0;
+            margin: 40px 0;
+            font-size: 40px;
+            font-weight: 900;
+            text-align: left;
+        }
+        #biography-h2 {
+            right: 0;
+            margin: 40px 0;
+            font-size: 40px;
+            font-weight: 900;
+            text-align: right;
+        }
+    
+        #biography-img1 {
+            float: right;
+            width: 50%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+            align: center;
+        }
+        #biography-img4 {
+            float: left;
+            width: 50%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+            align: center;
+        }
+        #biography p {
+            margin-top: 20px;
+            display: inline-block;
+            align: center;
+        }
+        #bio-image{
+            width: 99vw;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 40px;
+            margin-bottom: 90px;
+        }
+        #quote {
+            font-family: 'Merriweather', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            font-style: italic;
+            text-align: center;
+        }
+        }
+    
+@media (min-width : 960px) {
+    body * {
+        margin: 0 auto;
+    }
+    body {
+        font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color:#111111;
+    }
+    section {
+        width: 85%;
+    }
+    #services {
+        display: grid;
+        grid-template-rows: 120px 220px 220px;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    #services h1 {
+        top: 0;
+        left: 0;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 40px 0;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: left;
+    }
+
+    .service-box {
+        padding: 10px;
+        /* width: 33.33%; */
+        background-color: #f4f4f4;
+        border: 1px solid white;
+    }
+    .service-box h2 {
+        margin: 25px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .service-box p {
+        font-weight: 300;
+    }
+    #biography-h1 {
+        top: 0;
+        left: 0;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 40px 0;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: left;
+    }
+    #biography-h2 {
+        right: 0;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 40px 0;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: right;
+    }
+
+    #biography-img1 {
+        float: right;
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        align: center;
+    }
+    #biography-img4 {
+        float: left;
+        width: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        align: center;
+    }
+    #biography p {
+        margin-top: 20px;
+        display: inline-block;
+        align: center;
+    }
+    #bio-image{
+        width: 99vw;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 40px;
+        margin-bottom: 90px;
+    }
+    #quote {
+        font-family: 'Merriweather', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+    }
+    }

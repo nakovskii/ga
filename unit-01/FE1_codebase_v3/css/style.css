@@ -1,0 +1,261 @@
+body {
+  font-family: 'Raleway', Raleway, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #111111;
+  line-height: 1.4;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5.5vw;
+  line-height: .8;
+  font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+header {
+  background-image: url('../images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 14% 0 23% 0;
+  position: relative;
+  background-size: cover;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  font-size: 1.25em;
+  text-transform: lowercase;
+  text-align: center;
+  color: #222222;
+}
+
+nav a {
+  display: inline-block;
+  margin: .5em 2%;
+  padding-bottom: .125em;
+}
+
+nav a:hover, nav a.current {
+  border-bottom: 1px solid;
+}
+
+#mobile {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 31.3333%;
+  float: left;
+  margin: 1%;
+  display: block;
+}
+
+.thumbnail:hover {
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+section {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > footer {
+  clear: both;
+  background-color: #dddddd;
+  margin: 0;
+  padding: 1% 2%;
+}
+
+body > footer p {
+  display: inline-block;
+}
+
+body > footer #social {
+  float: right;
+  color: #444;
+}
+
+body > footer #social a {
+  margin-left: .5em;
+}
+
+textarea {
+  line-height: 1.4;
+}
+
+
+/*-------------------
+  Home page
+--------------------*/
+
+.home section {
+  padding: 1%;
+  overflow: hidden;
+}
+
+
+/*-------------------
+  About the Artists 
+--------------------*/
+
+.about header {
+  background-image: url('../images/bg4.jpg');
+}
+
+.about section {
+  overflow: hidden;
+}
+
+/*-------------------
+  Order prints 
+--------------------*/
+
+.prints header {
+  background-image: url('../images/bg3.jpg');
+}
+
+.orderform {
+  padding: 1% 2%;
+  font-size: .9em;
+  line-height: 2;
+}
+
+a#order {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  width: 6em;
+  text-align: center;
+}
+
+input[type=radio] ~ input[type=radio] {
+  margin-left: .5em;
+  margin-right: .25em;
+}
+
+
+/*-------------------
+  Locations 
+--------------------*/
+
+.locations header {
+  background-image: url('../images/bg1.jpg');
+}
+
+#map {
+  height: 80vh;
+  min-height: 300px;
+  position: relative;
+}
+
+#gmap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/*-------------------
+  Contact Us 
+--------------------*/
+
+.contact header {
+  background-image: url('../images/bg.jpg');
+}
+
+@media only screen and (min-width: 1800px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    font-size: 30px;
+  }
+  
+  .thumbnail {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .thumbnail {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    position: relative;
+    height: 15em;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 2em;
+    top: 0;
+    left: .5em;
+  }
+
+  nav {
+    text-align: right;
+    font-size: 1em;
+  }
+
+  nav a {
+    display: none;
+    font-size: 1.25em;
+    padding-right: 1em;
+  }
+
+  nav a:hover, nav a.current {
+    border-bottom: none;
+  }
+
+  #mobile {
+    font-size: 2em;
+    margin: .75em;
+    display: block;
+    padding-right: 0;
+  }
+
+  .thumbnail {
+    width: 98%;
+  }
+
+  body > footer p {
+    display: block;
+    text-align: center;
+  }
+
+  body > footer #social {
+    float: none;
+  }
+}
